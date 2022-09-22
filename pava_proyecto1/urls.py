@@ -18,4 +18,18 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hola/',app1.display),
+    path('ahora/',app1.displayDateTime),
+    path('app2/',app2.displayApp2),
+]
+
+
+from pava_app1 import views as app1
+from pava_app2 import views as app2
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('hola/',app1.display),
+    path('ahora/',app1.displayDateTime),
+    path('app2/',app2.displayApp2),
 ]
